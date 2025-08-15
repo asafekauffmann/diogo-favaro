@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
 
   return (
     <Container>
-      <span>Check insta@artDiogo</span>
+      <span>Check insta@artDiogo Genuine Brazilian Artist</span>
     </Container>
   );
 }

@@ -1,17 +1,18 @@
+"use client";
+
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  psdding: 80px;
-  
-    h1 {
-    font-weight: 600; 
+  @media (max-width: 600px) {
+    .mode {
+      width: 100%;
+      height: auto;
+    }
   }
 
-  p {
-    margin-bottom: 20px
+  h1 {
+    font-weight: 600; 
+    font-size: 30px;
   }
 
   .button {
@@ -26,8 +27,4 @@ export const Container = styled.div`
     margin: 6px 0;
   }
 
-  p {
-   max-width: 800px;
-  }
-
-`
+`;
