@@ -13,10 +13,14 @@ export const Container = styled.div`
     margin-top: 25px;
   }
 
-  span {
+  span, #english {
     color: gray;
     margin-top: 8px;
     font-size: 16px;
     font-weight: 400; 
+  }
+
+  .mode {
+    border-radius: 20px;
   }
 `

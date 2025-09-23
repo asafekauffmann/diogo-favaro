@@ -5,10 +5,10 @@ import { Container } from "./styles";
 
 const Footer: React.FC = () => {
 
-
+  
   return (
     <Container>
-      <span>Check insta@artDiogo Genuine Brazilian Artist</span>
+      <span>Genuine Brazilian Artist</span>
     </Container>
   );
 }
