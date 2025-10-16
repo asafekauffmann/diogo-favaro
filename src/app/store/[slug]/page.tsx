@@ -10,21 +10,23 @@ interface ArtPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export default function Art({ params }: ArtPageProps) {
+export default function ArtContent({ params }: ArtPageProps) {
+  
   const { slug } = React.use(params);
 
-  const art: ArtPiece | undefined = Images.find((piece) => piece.slug === slug);
+  const art: ArtPiece = Images.find((piece) => piece.slug === slug);
 
   return (
     <Container>
-      <div className="flex flex-row ml-16">
-        <div className="flex lg:flex-center lg:flex-row flex-wrap my-3 p-6 gap-16">
+      <div className="flex flex-col lg:flex-row md:mx-10">
+        <div className="flex lg:flex-center lg:flex-row flex-wrap my-3 p-6 gap-12">
           <Image
             src={art.image}
             alt={art.title}
-            width={340}
-            height={800}
-            className="mode"
+            width={300}
+            height={art.height}
+            className="image fade-in"
+            priority
           />
         </div>
 

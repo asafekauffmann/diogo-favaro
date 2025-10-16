@@ -12,7 +12,7 @@ const Store: React.FC = () => {
     <Container>
       <span>Store bro</span>
 
-      <div className="flex lg:flex-center lg:flex-row flex-wrap my-3 p-6 gap-16">
+      <div className="sm:flex lg:flex-center lg:flex-row justify-center flex-wrap my-3 gap-12">
         {Images.map((art) => (
           <Link key={art.slug} href={`store/${art.slug}`}>
             <Image
@@ -20,7 +20,7 @@ const Store: React.FC = () => {
               alt={art.title}
               width={art.width}
               height={art.height}
-              className="mode"
+              className="mode fade-in"
             />
           </Link>
         ))}

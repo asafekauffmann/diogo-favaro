@@ -10,7 +10,7 @@ const About: React.FC = () => {
       <div className="flex flex-center justify-center flex-col text-left my-3 px-10">
         <div className="flex flex-col flex-center align-middle items-center">
           <Image
-            src="/images/perfil.jpeg"
+            src="/images/Perfil.png"
             alt="perfil"
             width={100}
             height={200}

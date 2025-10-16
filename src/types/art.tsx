@@ -11,7 +11,6 @@ export interface ArtPiece {
   height: number;
   technique: string;
   year: number;
-  category: string;
 }
 
 // Tipo para os parâmetros da rota
