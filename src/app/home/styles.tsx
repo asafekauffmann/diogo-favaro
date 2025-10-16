@@ -1,20 +1,18 @@
-"use client";
-
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 80px 40px;
-  margin-bottom: 80px;
-
-  @media (max-width: 600px) {
-    .mode {
-      width: 100%;
-      height: auto;
-    }
+  .baseHeigth {
+    height: 72vh;
+  }
+    
+  h1 {
+    font-size: 60px;
+    width: 220px;
+    font-weight: 600;
   }
 
-  .mode {
-    margin: 36px 0px;
+  span {
+    color: gray;
   }
 
   .fade-in {

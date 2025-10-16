@@ -3,18 +3,31 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 80px 40px;
+  padding: 25px 40px;
   margin-bottom: 80px;
 
   @media (max-width: 600px) {
-    .mode {
+    .image {
       width: 100%;
       height: auto;
     }
   }
 
-  .mode {
-    margin: 36px 0px;
+  h1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .button {
+    padding: 0 14px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    height: 42px;
+    width: 180px;
+    background-color: #000000;
+    border-radius: 50px;
+    margin: 6px 0;
   }
 
   .fade-in {

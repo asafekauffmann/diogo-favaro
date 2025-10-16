@@ -2,46 +2,29 @@
 
 import React from "react";
 import { Container } from "./style";
+import Link from "next/link";
 import Image from "next/image";
+import { Images } from "../../data/artData";
 
-const Welcome: React.FC = () => {
+const Store: React.FC = () => {
   return (
     <Container>
-      <span>store bro</span>
-      <div className="flex flex-center flex-row flex-wrap text-left my-3 p-6 gap-16">
-        <Image
-          src="/images/lampiao.jpeg"
-          width={180}
-          height={320}
-          alt="photo store"
-        />
-        <Image
-          src="/images/xicano.jpeg"
-          width={180}
-          height={320}
-          alt="photo store"
-        />
-        <Image
-          src="/images/escritora.jpeg"
-          width={180}
-          height={320}
-          alt="photo store"
-        />
-        <Image
-          src="/images/mago.jpeg"
-          width={180}
-          height={320}
-          alt="photo store"
-        />
-        <Image
-          src="/images/thinker.jpeg"
-          width={180}
-          height={320}
-          alt="photo store"
-        />
+      <div className="sm:flex lg:flex-center lg:flex-row justify-center flex-wrap gap-14">
+        {Images.map((art) => (
+          <Link key={art.slug} href={`store/${art.slug}`}>
+            <Image
+              src={art.image}
+              alt={art.title}
+              width={280}
+              height={360}
+              className="mode fade-in"
+              style={{ height: "auto" }}
+            />
+          </Link>
+        ))}
       </div>
     </Container>
   );
 };
 
-export default React.memo(Welcome);
+export default React.memo(Store);
