@@ -1,20 +1,27 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "./style";
 import Image from "next/image";
 import { Images } from "../../../data/artData";
 import { ArtPiece } from "../../../types/art";
+import { useParams } from "next/navigation";
+import Link from "next/link";
 
-interface ArtPageProps {
-  params: Promise<{ slug: string }>;
-}
+export default function ArtContent() {
+  const params = useParams();
+  const [mounted, setMounted] = useState(false);
 
-export default function ArtContent({ params }: ArtPageProps) {
-  
-  const { slug } = React.use(params);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
+  if (!mounted || !params?.slug) return null;
+
+  const slug = params?.slug as string;
   const art: ArtPiece = Images.find((piece) => piece.slug === slug);
+
+  if (!art) return <p>Obra não encontrada</p>;
 
   return (
     <Container>
@@ -23,8 +30,8 @@ export default function ArtContent({ params }: ArtPageProps) {
           <Image
             src={art.image}
             alt={art.title}
-            width={300}
-            height={art.height}
+            width={360}
+            height={400}
             className="image fade-in"
             priority
           />
@@ -37,7 +44,13 @@ export default function ArtContent({ params }: ArtPageProps) {
           </h4>
           <p>{art.description}</p>
           <p>{art.fullDescription}</p>
-          <button className="button">Contact</button>
+
+          <Link href="/contact" className="flex items-center">
+            <span className="button text-center flex items-center justify-center">
+              CONTACT
+            </span>
+          </Link>
+         
         </div>
       </div>
     </Container>

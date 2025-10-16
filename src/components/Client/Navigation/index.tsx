@@ -1,10 +1,20 @@
-"use client";
+"use client"; // <- necessário para usar hooks
 
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation"; // <- hook do Next.js App Router
 
 const Navigation: React.FC = () => {
+  const pathname = usePathname();
+
+  const links = [
+    { href: "/", label: "Home" },
+    { href: "/store", label: "Store" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
+  ];
+
   return (
     <>
       <div className="flex flex-row items-center px-5 py-2 mt-3">
@@ -15,27 +25,22 @@ const Navigation: React.FC = () => {
       <div className="h-auto">
         <nav className="h-auto w-auto">
           <ul className="flex flex-row gap-4 p-5">
-            <li>
-              <Link href="/" className="nav">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/store" className="nav">
-                Store
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="nav">
-                About
-              </Link>
-            </li>
+            {links.map((link) => {
+              const isActive = pathname === link.href;
 
-            <li>
-              <Link href="/contact" className="nav">
-                Contact
-              </Link>
-            </li>
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={`nav ${
+                      isActive ? "text-black font-semibold" : "text-gray-500"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>

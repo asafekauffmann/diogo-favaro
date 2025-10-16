@@ -3,6 +3,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  padding: 25px 40px;
   margin-bottom: 80px;
 
   @media (max-width: 600px) {
@@ -20,7 +21,7 @@ export const Container = styled.div`
   .button {
     padding: 0 14px;
     color: white;
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 18px;
     height: 42px;
     width: 180px;

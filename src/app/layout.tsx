@@ -8,11 +8,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body>
         <Navigation />
-          {children}
+        {children}
         <Footer />
       </body>
     </html>

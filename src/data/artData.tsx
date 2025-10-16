@@ -2,20 +2,6 @@ import { ArtPiece } from "../types/art";
 
 export const Images: ArtPiece[] = [
   {
-    slug: "mago",
-    title: "O Mago",
-    image: "/images/mago.jpeg",
-    description: "Uma descrição detalhada do quadro 1. Esta obra representa...",
-    fullDescription:
-      "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
-    price: 299.99,
-    artist: "Artista 1",
-    width: 200,
-    height: 360,
-    technique: "Óleo sobre tela",
-    year: 2025,
-  },
-  {
     slug: "thinker",
     title: "The Thinker",
     image: "/images/thinker.jpeg",
@@ -24,8 +10,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Artista 1",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -39,8 +24,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -53,8 +37,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -68,8 +51,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -82,8 +64,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -96,8 +77,20 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
+    technique: "Óleo sobre tela",
+    year: 2025,
+  },
+    {
+    slug: "estudo-de-croma",
+    title: "Estudo de Crôma",
+    image: "/images/estudo-de-croma.jpg",
+    description: "Uma descrição detalhada do quadro 1. Esta obra representa...",
+    fullDescription:
+      "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
+    price: 299.99,
+    artist: "Diogo Fávaro",
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -110,13 +103,12 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
   {
-    slug: "joão-batista",
+    slug: "joao-batista",
     title: "João Batista",
     image: "/images/joao-batista.jpg",
     description: "Uma descrição detalhada do quadro 1. Esta obra representa...",
@@ -124,8 +116,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -138,8 +129,20 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
+    technique: "Óleo sobre tela",
+    year: 2025,
+  },
+  {
+    slug: "corisco",
+    title: "Corisco",
+    image: "/images/corisco.jpg",
+    description: "Uma descrição detalhada do quadro 1. Esta obra representa...",
+    fullDescription:
+      "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
+    price: 299.99,
+    artist: "Artista 1",
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -152,8 +155,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -166,8 +168,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Diogo Fávaro",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -180,8 +181,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Artista 1",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -194,8 +194,7 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Artista 1",
-    width: 200,
-    height: 360,
+
     technique: "Óleo sobre tela",
     year: 2025,
   },
@@ -208,8 +207,18 @@ export const Images: ArtPiece[] = [
       "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
     price: 299.99,
     artist: "Artista 1",
-    width: 200,
-    height: 360,
+    technique: "Óleo sobre tela",
+    year: 2025,
+  },
+  {
+    slug: "mago",
+    title: "O Mago",
+    image: "/images/mago.jpeg",
+    description: "Uma descrição detalhada do quadro 1. Esta obra representa...",
+    fullDescription:
+      "Esta é uma descrição mais longa e detalhada sobre a obra de arte, técnicas utilizadas, inspiração do artista, etc.",
+    price: 299.99,
+    artist: "Artista 1",
     technique: "Óleo sobre tela",
     year: 2025,
   },
