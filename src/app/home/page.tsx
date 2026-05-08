@@ -5,7 +5,10 @@ import Image from "next/image";
 import { Container } from "./styles";
 
 const HomeContent: React.FC = () => {
+
+
   return (
+    
     <Container>
       <div className="w-full md:flex items-center align-center md:justify-around baseHeigth">
         
@@ -13,7 +16,11 @@ const HomeContent: React.FC = () => {
 
           <div className="h-auto pl-9 pb-9">
             <h1 className="">Pintura</h1>
-            <h1 className="flex">Arte <span>/Obra</span></h1>
+            <h1 className="flex">Arte
+              <span>
+                /Obra
+              </span>
+            </h1>
             <h1 className="">Óleo</h1>
           </div>
         </div>
